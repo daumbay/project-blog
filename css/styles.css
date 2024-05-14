@@ -116,6 +116,24 @@ section.about-me img {
     max-width: 320px;
 }
 
+section.subscribe {
+    text-align: center;
+}
+
+section.subscribe form {
+    margin: 10px auto;
+}
+
+section.subscribe form input[type="email"] {
+    width: 70%;
+    height: 1.5rem;
+}
+
+section.subscribe form input[type="submit"] {
+    width: 20%;
+    height: 1.85rem;
+}
+
 section.social-media ul {
     list-style: none;
     padding: 0;
