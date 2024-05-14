@@ -128,3 +128,8 @@ section.social-media img {
     min-width: 32px;
     max-width: 48px;
 }
+
+/* Footer area */
+footer {
+    text-align: center;
+}
