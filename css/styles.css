@@ -1,0 +1,6 @@
+@import url(./home-mobile.css) (max-width: 768px);
+
+html {
+    box-sizing: border-box;
+    font: 16px Arial, Helvetica, sans-serif;
+}
