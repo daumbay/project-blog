@@ -1,5 +1,4 @@
 body {
-    display: grid;
     grid-template-areas: 
     "header"
     "nav"
@@ -9,25 +8,4 @@ body {
     "aside"
     "aside"
     "footer";
-    gap: 2vh;
-}
-
-header {
-    grid-area: header;
-}
-
-nav {
-    grid-area: nav;
-}
-
-main {
-    grid-area: main;
-}
-
-aside {
-    grid-area: aside;
-}
-
-footer {
-    grid-area: footer;
 }

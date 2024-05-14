@@ -16,9 +16,36 @@ a {
     text-decoration: none;
     color: #0a3092;
 }
- a:hover {
+
+a:hover {
     color: #356af0;
- }
+}
+
+/* Page Layout */
+body {
+    display: grid;
+    gap: 2vh 2vw;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
 
 /* Header Styles */
 .title {
