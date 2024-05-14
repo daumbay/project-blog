@@ -1,5 +1,6 @@
 @import url(./home-mobile.css) (max-width: 768px);
 
+/* Master Styles */
 html {
     box-sizing: border-box;
     font: 16px Arial, Helvetica, sans-serif;
@@ -7,4 +8,24 @@ html {
 
 img {
     width: 100%;
+}
+
+/* Header Styles */
+.title {
+    background-color: #f0f2f3;
+    border: 1px solid #afb7bb;
+    border-radius: 6px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    margin: 2% 0;
+}
+
+.title p {
+    margin: 0;
 }
