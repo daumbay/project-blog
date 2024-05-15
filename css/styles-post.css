@@ -10,7 +10,6 @@ html {
 
 img {
     width: 80vw;
-    min-width: 240px;
     max-width: 640px;
 }
 
@@ -166,9 +165,11 @@ main article:nth-of-type(3) {
 @media (min-width: 1024px) {
     main section {
         grid-template-areas: 
-        "header header header"
-        "article-1 article-2 article-3"
-        "figure-1 figure-2 .";
+        "header header"
+        "article-1 article-2"
+        "figure-1 figure-1"
+        "article-3 article-3"
+        "figure-2 figure-2";
     }
 }
 
