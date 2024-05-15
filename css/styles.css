@@ -141,6 +141,19 @@ section.about-me {
     text-align: center;
 }
 
+section.popular-posts h3 {
+    text-align: center;
+}
+
+section.popular-posts ul {
+    padding: 0 10%;
+    line-height: 1.5rem;
+}
+
+section.popular-posts li {
+    margin: 2% 0;
+}
+
 section.about-me img {
     clip-path: circle();
     width: 50vw;
