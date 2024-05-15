@@ -1,0 +1,11 @@
+body {
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "main"
+    "main"
+    "aside"
+    "aside"
+    "footer";
+}
