@@ -1,0 +1,229 @@
+@import url(post-mobile.css) (max-width: 768px);
+@import url(post-tablet.css) (min-width: 768px) and (max-width: 1024px);
+@import url(post-desktop.css) (min-width: 1024px);
+
+/* Master Styles */
+html {
+    box-sizing: border-box;
+    font: 16px Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 80vw;
+    max-width: 640px;
+}
+
+a {
+    text-decoration: none;
+    color: #0a3092;
+}
+
+a:hover {
+    color: #356af0;
+}
+
+/* Page Layout */
+body {
+    display: grid;
+    gap: 2vh 2vw;
+}
+
+header.title {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* Header Styles */
+.title {
+    background-color: #f0f2f3;
+    border: 1px solid #afb7bb;
+    border-radius: 6px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    margin: 2% 0;
+}
+
+.title p {
+    margin: 0;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #f0f2f3;
+    border: 1px solid #afb7bb;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Main area styles */
+main {
+    display: grid;
+    grid-template-areas:
+    "post-main post-main"
+    "post-past-1 post-past-2";
+    gap: 2vh 2vw;
+}
+
+main > section:nth-of-type(1) {
+    grid-area: post-main;
+}
+
+main > section:nth-of-type(2) {
+    grid-area: post-past-1;
+}
+
+main > section:nth-of-type(3) {
+    grid-area: post-past-2;
+}
+
+main section {
+    background-color: #f0f2f3;
+    border: 1px solid #afb7bb;
+    border-radius: 6px;
+    margin: 2vh 0;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "article-1"
+    "figure-1"
+    "article-2"
+    "figure-2"
+    "article-3";
+}
+
+main header {
+    grid-area: header;
+    text-align: center;
+}
+
+main figure {
+    text-align: center;
+}
+
+main figure:nth-of-type(1) {
+    grid-area: figure-1;
+}
+
+main figure:nth-of-type(2) {
+    grid-area: figure-2;
+}
+
+main img {
+    border-radius: 6px;
+}
+
+main article {
+    grid-area: article;
+    text-align: justify;
+    padding: 0 10px;
+}
+
+main article:nth-of-type(1) {
+    grid-area: article-1;
+}
+
+main article:nth-of-type(2) {
+    grid-area: article-2;
+}
+
+main article:nth-of-type(3) {
+    grid-area: article-3;
+}
+
+@media (min-width: 1024px) {
+    main section {
+        grid-template-areas: 
+        "header header"
+        "article-1 article-2"
+        "figure-1 figure-1"
+        "article-3 article-3"
+        "figure-2 figure-2";
+    }
+}
+
+/* Aside section styles */
+aside section {
+    background-color: #f0f2f3;
+    border: 1px solid #afb7bb;
+    border-radius: 6px;
+    margin: 2vh 0;
+}
+
+section.about-me {
+    text-align: center;
+}
+
+section.about-me img {
+    clip-path: circle();
+    width: 50vw;
+    min-width: 80px;
+    max-width: 160px;
+}
+
+section.subscribe {
+    text-align: center;
+}
+
+section.subscribe form {
+    margin: 10px auto;
+}
+
+section.subscribe form input[type="email"] {
+    width: 60%;
+    height: 1.5rem;
+}
+
+section.subscribe form input[type="submit"] {
+    width: 30%;
+    height: 1.85rem;
+}
+
+section.social-media ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section.social-media img {
+    min-width: 32px;
+    max-width: 48px;
+}
+
+/* Footer area */
+footer {
+    text-align: center;
+}

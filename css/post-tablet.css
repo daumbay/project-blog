@@ -1,0 +1,6 @@
+body {
+    grid-template-areas:
+    "header header nav nav"
+    "aside main main main"
+    "footer footer footer footer";
+}
