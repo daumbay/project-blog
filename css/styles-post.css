@@ -8,6 +8,10 @@ html {
     font: 16px Arial, Helvetica, sans-serif;
 }
 
+body {
+    background: linear-gradient(#356af0, #d0e8ff);
+}
+
 img {
     width: 80vw;
     max-width: 640px;
@@ -192,6 +196,19 @@ section.about-me img {
     max-width: 160px;
 }
 
+section.popular-posts h3 {
+    text-align: center;
+}
+
+section.popular-posts ul {
+    padding: 0 10%;
+    line-height: 1.5rem;
+}
+
+section.popular-posts li {
+    margin: 2% 0;
+}
+
 section.subscribe {
     text-align: center;
 }
@@ -208,6 +225,10 @@ section.subscribe form input[type="email"] {
 section.subscribe form input[type="submit"] {
     width: 30%;
     height: 1.85rem;
+    background-color: #356af0;
+    color: #ffffff;
+    border: 1px solid #356af0;
+    border-radius: 6px;
 }
 
 section.social-media ul {
