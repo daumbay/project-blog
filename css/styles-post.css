@@ -89,6 +89,26 @@ nav ul {
 }
 
 /* Main area styles */
+main {
+    display: grid;
+    grid-template-areas:
+    "post-main post-main"
+    "post-past-1 post-past-2";
+    gap: 2vh 2vw;
+}
+
+main > section:nth-of-type(1) {
+    grid-area: post-main;
+}
+
+main > section:nth-of-type(2) {
+    grid-area: post-past-1;
+}
+
+main > section:nth-of-type(3) {
+    grid-area: post-past-2;
+}
+
 main section {
     background-color: #f0f2f3;
     border: 1px solid #afb7bb;
